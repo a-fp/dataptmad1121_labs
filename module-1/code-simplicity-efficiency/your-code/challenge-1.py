@@ -15,6 +15,22 @@ a = input('Please choose your first number (zero to five): ')
 b = input('What do you want to do? plus or minus: ')
 c = input('Please choose your second number (zero to five): ')
 
+list = ['zero','one','two','three','four','five']
+list1=['plus','minus']
+def calculator(a,b,c):
+    for i in list:
+        if a == i:
+            for z in list1:
+                if b == z:
+                    for x in list:
+                        if  c==x:
+                            print(a+b+c+'equals'+ sum(int(a)+int(b)))
+    
+
+
+
+
+
 if a == 'zero' and b == 'plus'  and c == 'zero':
     print("zero plus zero equals zero")
 if a == 'zero' and b == 'plus'  and c == 'one':
@@ -167,3 +183,6 @@ if (not a == 'zero' and not a == 'one' and not a == 'two' and not a == 'three' a
     print("I am not able to answer this question. Check your input.")
 
 print("Thanks for using this calculator, goodbye :)")
+
+
+
